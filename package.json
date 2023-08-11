@@ -5,7 +5,6 @@
   "version": "2023.0.0",
   "type": "module",
   "homepage": "http://dalton-simonson.github.io/heartBeats-Front/",
-  "private": "false",
   "scripts": {
     "dev": "vite",
     "start": "vite",
