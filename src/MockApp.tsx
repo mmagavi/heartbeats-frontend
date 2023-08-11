@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import {LoginPage} from "./pages/LoginPage";
 import {AboutPage} from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-import MockHomePage from "./pages/MockHomePage";
+// import MockHomePage from "./pages/MockHomePage";
 import {LogoutPage} from "./pages/LogoutPage";
 import {MusicNav_AriaLabel, AboutNav_AriaLabel, LogoutNav_AriaLabel} from "./accessibility/Aria";
 
