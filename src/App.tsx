@@ -26,7 +26,7 @@ function App(this: any) {
     // render our page!
     return (
         <div className="main">
-            <Router basename="/heartBeats-Front">
+            <Router>
                 <Navbar fixed="top" className="header">
                     <Navbar.Brand>
                         {/*<Header />*/}
@@ -36,7 +36,7 @@ function App(this: any) {
                     </div>
                 </Navbar>
                 <Routes>
-                    <Route path="" element={<LoginPage
+                    <Route path="/heartBeats-Front" element={<LoginPage
                         userCode={userCode}
                         setUserCode={setUserCode}
                         loggedIn={loggedIn}
@@ -49,7 +49,7 @@ function App(this: any) {
                         setLoggedIn={setLoggedIn}
                     />}/>
                     <Route path="about" element={<AboutPage/>}/>
-                    <Route path="music" element={<HomePage
+                    <Route path="/heartBeats-Front/music" element={<HomePage
                         playlist={playlistID}
                         setPlaylist={(x) => setPlaylist(x)}
                         loggedIn={loggedIn}
