@@ -7,7 +7,7 @@ import {AboutPage} from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import {LogoutPage} from "./pages/LogoutPage";
 import {NavComponent} from "./components/NavComponent";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {HashRouter as Router, Route, Link} from "react-router-dom";
 import {Routes} from "react-router";
 import {ReviewPage} from "./pages/ReviewPage";
 
@@ -36,7 +36,7 @@ function App(this: any) {
                     </div>
                 </Navbar>
                 <Routes>
-                    <Route path="/heartBeats-Front" element={<LoginPage
+                    <Route path="" element={<LoginPage
                         userCode={userCode}
                         setUserCode={setUserCode}
                         loggedIn={loggedIn}
@@ -49,7 +49,7 @@ function App(this: any) {
                         setLoggedIn={setLoggedIn}
                     />}/>
                     <Route path="about" element={<AboutPage/>}/>
-                    <Route path="/heartBeats-Front/music" element={<HomePage
+                    <Route path="/music" element={<HomePage
                         playlist={playlistID}
                         setPlaylist={(x) => setPlaylist(x)}
                         loggedIn={loggedIn}
