@@ -49,7 +49,7 @@ function App(this: any) {
                         setLoggedIn={setLoggedIn}
                     />}/>
                     <Route path="about" element={<AboutPage/>}/>
-                    <Route path="music" element={<HomePage
+                    <Route path="/music" element={<HomePage
                         playlist={playlistID}
                         setPlaylist={(x) => setPlaylist(x)}
                         loggedIn={loggedIn}
