@@ -26,7 +26,7 @@ function App(this: any) {
     // render our page!
     return (
         <div className="main">
-            <Router>
+            <Router basename="/">
                 <Navbar fixed="top" className="header">
                     <Navbar.Brand>
                         {/*<Header />*/}
