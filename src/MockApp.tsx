@@ -80,14 +80,14 @@ function MockApp() {
                 loggedIn={loggedIn}
                 setLoggedIn={setLoggedIn}
             />
-            <MockHomePage
+            {/* <MockHomePage
                 playlist={playlistID}
                 setPlaylist={(x: string) => setPlaylist(x)}
                 loggedIn={loggedIn}
                 setLoggedIn={setLoggedIn}
                 userCode={userCode}
                 setUserCode={setUserCode}
-            />
+            /> */}
             <AboutPage/>
             <LogoutPage userCode={userCode} setUserCode={setUserCode} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
         </div>
