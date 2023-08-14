@@ -26,7 +26,7 @@ function App(this: any) {
     // render our page!
     return (
         <div className="main">
-            <Router>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <Navbar fixed="top" className="header">
                     <Navbar.Brand>
                         {/*<Header />*/}
@@ -35,20 +35,20 @@ function App(this: any) {
                         <NavComponent loggedIn={loggedIn}/>
                     </div>
                 </Navbar>
-                    <Routes>
+                <Routes>
                     <Route path="/" element={<LoginPage
                         userCode={userCode}
                         setUserCode={setUserCode}
                         loggedIn={loggedIn}
                         setLoggedIn={setLoggedIn}
                     />}/>
-                    <Route path="login" element={<LoginPage
+                    <Route path="/login" element={<LoginPage
                         userCode={userCode}
                         setUserCode={setUserCode}
                         loggedIn={loggedIn}
                         setLoggedIn={setLoggedIn}
                     />}/>
-                    <Route path="about" element={<AboutPage/>}/>
+                    <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/music" element={<HomePage
                         playlist={playlistID}
                         setPlaylist={(x) => setPlaylist(x)}
@@ -57,18 +57,18 @@ function App(this: any) {
                         userCode={userCode}
                         setUserCode={setUserCode}
                     />}/>
-                    <Route path="logout" element={<LogoutPage
+                    <Route path="/logout" element={<LogoutPage
                         userCode={userCode}
                         setUserCode={setUserCode}
                         loggedIn={loggedIn}
                         setLoggedIn={setLoggedIn}
                         />}/>
-                    <Route path="review" element={<ReviewPage
+                    <Route path="/review" element={<ReviewPage
                         loggedIn={loggedIn}
                         setLoggedIn={setLoggedIn}
                     />}/>
-                    </Routes>
-            </Router>
+                </Routes>
+            </HashRouter>
         </div>
     );
 }
