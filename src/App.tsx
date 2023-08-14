@@ -26,7 +26,7 @@ function App(this: any) {
     // render our page!
     return (
         <div className="main">
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <Router>
                 <Navbar fixed="top" className="header">
                     <Navbar.Brand>
                         {/*<Header />*/}
@@ -35,7 +35,7 @@ function App(this: any) {
                         <NavComponent loggedIn={loggedIn}/>
                     </div>
                 </Navbar>
-                <Routes>
+                    <Routes>
                     <Route path="/" element={<LoginPage
                         userCode={userCode}
                         setUserCode={setUserCode}
@@ -49,7 +49,7 @@ function App(this: any) {
                         setLoggedIn={setLoggedIn}
                     />}/>
                     <Route path="about" element={<AboutPage/>}/>
-                    <Route path="music" element={<HomePage
+                    <Route path="/music" element={<HomePage
                         playlist={playlistID}
                         setPlaylist={(x) => setPlaylist(x)}
                         loggedIn={loggedIn}
@@ -67,8 +67,8 @@ function App(this: any) {
                         loggedIn={loggedIn}
                         setLoggedIn={setLoggedIn}
                     />}/>
-                </Routes>
-            </HashRouter>
+                    </Routes>
+            </Router>
         </div>
     );
 }
