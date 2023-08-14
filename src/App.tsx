@@ -36,7 +36,7 @@ function App(this: any) {
                     </div>
                 </Navbar>
                 <Routes>
-                    <Route path="/" element={<LoginPage
+                    <Route path="" element={<LoginPage
                         userCode={userCode}
                         setUserCode={setUserCode}
                         loggedIn={loggedIn}
