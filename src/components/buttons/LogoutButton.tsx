@@ -21,12 +21,12 @@ function LogoutButton(props: LogoutStatusProps) {
     function logout() {
         props.setLI(false);
         props.setCode("");
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "https://dalton-simonson.github.io/heartBeats-Front/#/login";
     }
 
     // return component!
     return (
-        <button className="LoginButton" role={LogoutButton_Role} aria-label={LogoutButton_AriaLabel} tabIndex={0} onClick={logout}>
+        <button className="LogoutButton" role={LogoutButton_Role} aria-label={LogoutButton_AriaLabel} tabIndex={0} onClick={logout}>
             Log Out
         </button>
     )
