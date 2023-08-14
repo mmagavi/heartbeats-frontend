@@ -4,6 +4,7 @@
   "license": "UNLICENSED",
   "version": "2023.0.0",
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "start": "vite",
