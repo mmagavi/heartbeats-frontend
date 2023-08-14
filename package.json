@@ -1,6 +1,6 @@
 {
-  "name": "repl-gearup",
-  "author": "cs32 TAs",
+  "name": "heartbeats",
+  "author": "Dalton Simonson, Maya Magavi",
   "license": "UNLICENSED",
   "version": "2023.0.0",
   "type": "module",
