@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "heartBeats-Front/dist",
+  base: "/dist",
   plugins: [react()],
   test: {
     globals: true,
