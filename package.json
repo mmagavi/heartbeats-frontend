@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "version": "2023.0.0",
   "type": "module",
-  "homepage": ".",
+  "homepage": "https://dulcet-pavlova-55e566.netlify.app/",
   "scripts": {
     "dev": "vite",
     "start": "vite",
