@@ -17,17 +17,12 @@ interface LoginStatusProps {
  */
 function LoginButton(props: LoginStatusProps) {
 
-    function changePage(s: string){
-        window.location.href = "https://dalton-simonson.github.io/heartBeats-Front/#/music";
-        console.log(s);
-    }
-
     // handle button click
     async function handleLoginClick(){
         //await fetch("http://localhost:3232/login")
         await fetch("https://heartbeats-ce72b0db6ebc.herokuapp.com/login")
         .then((response) => response.text())
-        .then(response => {changePage(response)})
+        .then(response => {window.location.replace(response);})
     }
 
     // return component!
