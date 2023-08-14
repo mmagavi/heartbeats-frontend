@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "version": "2023.0.0",
   "type": "module",
-  "homepage": "https://dalton-simonson.github.io/heartBeats-Front/#",
+  "homepage": "https://dalton-simonson.github.io/heartBeats-Front/",
   "scripts": {
     "dev": "vite",
     "start": "vite",
