@@ -26,7 +26,7 @@ function LogoutButton(props: LogoutStatusProps) {
 
     // return component!
     return (
-        <button className="LogoutButton" role={LogoutButton_Role} aria-label={LogoutButton_AriaLabel} tabIndex={0} onClick={logout}>
+        <button className="LoginButton" role={LogoutButton_Role} aria-label={LogoutButton_AriaLabel} tabIndex={0} onClick={logout}>
             Log Out
         </button>
     )
