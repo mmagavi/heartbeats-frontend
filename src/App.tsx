@@ -26,7 +26,7 @@ function App(this: any) {
     // render our page!
     return (
         <div className="main">
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
                 <Navbar fixed="top" className="header">
                     <Navbar.Brand>
                         {/*<Header />*/}
