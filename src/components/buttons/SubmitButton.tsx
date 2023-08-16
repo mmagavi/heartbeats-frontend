@@ -90,12 +90,12 @@ function SubmitButton(props: SubmitButtonProps) {
         props.setResultsPage(true);
     }
 
-    async function handleSubmit() {
+    function handleSubmit() {
         setIsLoading(true);
-        console.log('beginning handle submit...' + isLoading);
-        logInfo();
-        setIsLoading(false);
-        console.log('ending handleSubmit...' + isLoading);
+        console.log('beginning handleSubmit...' + isLoading);
+        // logInfo();
+        // setIsLoading(false);
+        // console.log('ending handleSubmit...' + isLoading);
     }
 
     // return component!
