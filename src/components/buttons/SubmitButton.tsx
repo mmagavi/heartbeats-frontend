@@ -90,8 +90,8 @@ function SubmitButton(props: SubmitButtonProps) {
         props.setResultsPage(true);
     }
 
-    function handleSubmit() {
-        setIsLoading(true);
+    async function handleSubmit() {
+        await setIsLoading(true);
         console.log('beginning handleSubmit...' + isLoading);
         // logInfo();
         // setIsLoading(false);
