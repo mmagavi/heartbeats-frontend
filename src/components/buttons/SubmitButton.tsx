@@ -52,7 +52,9 @@ function SubmitButton(props: SubmitButtonProps) {
         if(access_token === "" && refresh_token === ""){
 
             const token_response : string | Map<string, string> =
-             await checkResponse(await makeRequest("register-user-code?code=" + params.get("code")))
+             await checkResponse(await makeRequest("register-user-code?code=" + props.userCode))
+            // const token_response : string | Map<string, string> =
+            //     await checkResponse(await makeRequest("register-user-code?code=" + params.get("code")))
 
             if (token_response instanceof Map) {
                 access_token = token_response.get("access_token");
