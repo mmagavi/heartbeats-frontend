@@ -7,7 +7,7 @@ import {AboutPage} from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import {LogoutPage} from "./pages/LogoutPage";
 import {NavComponent} from "./components/NavComponent";
-import {HashRouter as Router, Route, Link, HashRouter} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link, HashRouter} from "react-router-dom";
 import {Routes} from "react-router";
 import {ReviewPage} from "./pages/ReviewPage";
 
@@ -26,7 +26,7 @@ function App(this: any) {
     // render our page!
     return (
         <div className="main">
-            <HashRouter>
+            <Router>
                 <Navbar fixed="top" className="header">
                     <Navbar.Brand>
                         {/*<Header />*/}
@@ -68,7 +68,7 @@ function App(this: any) {
                         setLoggedIn={setLoggedIn}
                     />}/>
                 </Routes>
-            </HashRouter>
+            </Router>
         </div>
     );
 }
