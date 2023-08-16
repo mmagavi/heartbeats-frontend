@@ -1,5 +1,6 @@
 import { SubmitButton_AriaLabel, SubmitButton_Role } from "../../accessibility/Aria";
 import { checkResponse, makeRequest } from "../../requests";
+import {useState} from "react";
 
 /**
  * Props for submit Button
@@ -42,9 +43,12 @@ interface ServerResponse{
  * @constructor
  */
 function SubmitButton(props: SubmitButtonProps) {
+    const [isLoading, setIsLoading] = useState(false);
 
     // log information & make api call
-    async function logInfo() {
+    const logInfo = async() => {
+        setIsLoading(true);
+        window.alert("Creating your playlist! This could take up to a minute. Thanks for your patience :)");
 
         let raw_args = window.location.search;
         let params = new URLSearchParams(raw_args);
@@ -60,12 +64,6 @@ function SubmitButton(props: SubmitButtonProps) {
                 access_token = token_response.get("access_token");
                 refresh_token = token_response.get("refresh_token");
             }
-        }
-    
-        let et = "";
-
-        if(props.playlist_type === "exercise"){
-            et = "working_out";
         }
 
         let playlist_request: string ="generate-playlist?access_token=" + access_token
@@ -90,13 +88,15 @@ function SubmitButton(props: SubmitButtonProps) {
             props.setPlaylistID(playlist_id)
         }
 
+        setIsLoading(false);
+
         // Redirect to result page
         props.setResultsPage(true);
     }
 
     // return component!
     return (
-        <button className="formSubmitButton" role={SubmitButton_Role} aria-label={SubmitButton_AriaLabel} tabIndex={0} onClick={logInfo}>
+        <button className="formSubmitButton" role={SubmitButton_Role} aria-label={SubmitButton_AriaLabel} tabIndex={0} onClick={logInfo} disabled={isLoading}>
             Submit
         </button>
     )

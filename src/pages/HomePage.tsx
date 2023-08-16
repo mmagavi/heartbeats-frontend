@@ -47,9 +47,6 @@ export default function HomePage(props: homePageProps) {
     let params = new URLSearchParams(raw_args);
     if (typeof(params.get("code")) != null ) {
 
-      // TODO:
-      // causing an error message: react-dom.development.js:86 Warning:
-      // Cannot update a component (`App`) while rendering a different component (`HomePage`).
       props.setUserCode(String(params.get("code")));
       props.setLoggedIn(true);
 
