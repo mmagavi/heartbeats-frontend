@@ -21,7 +21,7 @@ function LogoutButton(props: LogoutStatusProps) {
     function logout() {
         props.setLI(false);
         props.setCode("");
-        window.location.href = "https://dalton-simonson.github.io/heartBeats-Front/#/login";
+        window.location.href = "https://dulcet-pavlova-55e566.netlify.app/login";
     }
 
     // return component!
