@@ -46,9 +46,7 @@ function SubmitButton(props: SubmitButtonProps) {
     const [isLoading, setIsLoading] = useState(false);
 
     // log information & make api call
-    const logInfo = async() => {
-        setIsLoading(true);
-        window.alert("Creating your playlist! This could take up to a minute. Thanks for your patience :)");
+    async function logInfo() {
 
         let raw_args = window.location.search;
         let params = new URLSearchParams(raw_args);
@@ -88,16 +86,22 @@ function SubmitButton(props: SubmitButtonProps) {
             props.setPlaylistID(playlist_id)
         }
 
-        setIsLoading(false);
-
         // Redirect to result page
         props.setResultsPage(true);
     }
 
+    function handleSubmit() {
+        setIsLoading(true);
+        console.log('beginning handle submit...' + isLoading);
+        logInfo();
+        setIsLoading(false);
+        console.log('ending handleSubmit...' + isLoading);
+    }
+
     // return component!
     return (
-        <button className="formSubmitButton" role={SubmitButton_Role} aria-label={SubmitButton_AriaLabel} tabIndex={0} onClick={logInfo} disabled={isLoading}>
-            Submit
+        <button className="formSubmitButton" role={SubmitButton_Role} aria-label={SubmitButton_AriaLabel} tabIndex={0} onClick={handleSubmit} disabled={isLoading}>
+            {isLoading ? 'Loading...' : 'Submit'}
         </button>
     )
 }
