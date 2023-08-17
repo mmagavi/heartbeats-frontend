@@ -73,6 +73,7 @@ export default function HomePage(props: homePageProps) {
   );
 
   function getSubmitButton(clear: () => void) {
+    console.log("rendering submitButton. isPersonalized:" + isPersonalized);
     if (props.playlist == "") {
       return null;
     } else {
