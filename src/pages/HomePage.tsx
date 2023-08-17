@@ -37,6 +37,7 @@ export default function HomePage(props: homePageProps) {
   const [genres, setGenres] = useState<string>("");
   const [desiredAge, setDesiredAge] = useState<number>(-1);
   const [desiredIntensity, setDesiredIntensity] = useState<string>("");
+  const [isPersonalized, setIsPersonalized] = useState(false);
   const [desiredLength, setDesiredLength] = useState<number>(-1);
   const [currentBPM, setCurrentBPM] = useState<number>(-1);
   const [playlist_id, setPlaylistID] = useState<string | undefined>("")
@@ -81,6 +82,7 @@ export default function HomePage(props: homePageProps) {
                         playlist_type={playlistType}
                         desired_intensity={desiredIntensity}
                         age={desiredAge}
+                        isPersonalized={isPersonalized}
                         workout_length={desiredLength}
                         current_bpm={currentBPM}
                         setResultsPage={setResultsPage}
@@ -143,6 +145,7 @@ export default function HomePage(props: homePageProps) {
       <div className="mainBody">
         <ModeQuestionComponent {...playlistQuestion}
                            setDesiredAge={setDesiredAge}
+                               setIsPersonalized={setIsPersonalized}
                            setDesiredLength={setDesiredLength}
                            setDesiredBPM={setCurrentBPM}
                                setDesiredIntensity={setDesiredIntensity}/>

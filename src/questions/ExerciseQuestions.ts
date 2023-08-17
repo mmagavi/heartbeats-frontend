@@ -35,5 +35,23 @@ export const ExerciseQuestions = [
     question: "How long would you like your workout to be (in minutes)?",
     id: 3,
     key: 104,
+  },
+  {
+    question: "Create playlist based on my liked songs (of any genre)",
+    id: 4,
+    choices: [
+      {
+        text: "yes",
+        img: "https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/31a4debc7443411195df509e38a5f9a3.jpg",
+        val: "true",
+        key: 105
+      },
+      {
+        text: "no",
+        img: "https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/31a4debc7443411195df509e38a5f9a3.jpg",
+        val: "false",
+        key: 106
+      },
+    ]
   }
 ];

@@ -13,6 +13,7 @@ interface SubmitButtonProps {
     desired_intensity : String;
     age : number;
     workout_length: number;
+    isPersonalized: boolean;
     current_bpm: number;
     setResultsPage: (b : boolean) => void;
     setPlaylistID: (id : string | undefined) => void;
@@ -71,6 +72,7 @@ function SubmitButton(props: SubmitButtonProps) {
         + "&genres=" + props.genres
         + "&age=" + props.age
         + "&workout_length=" + props.workout_length
+        + "&is_personalized=" + props.isPersonalized
 
         console.log(props.playlist_type)
 

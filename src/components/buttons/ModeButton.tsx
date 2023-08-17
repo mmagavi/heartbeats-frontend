@@ -22,6 +22,7 @@ interface modeProps {
     setDesiredLength: (length : number) => void;
     setDesiredBPM: (bpm : number) => void;
     setDesiredIntensity: (warmup: string) => void;
+    setIsPersonalized: (b : boolean) => void;
 }
 
 /**
@@ -50,9 +51,12 @@ export default function ModeButton(props: modeProps) {
             } else if (props.val == "high") {
                 props.setDesiredIntensity("advanced");
             }
-        } if (props.id == 3) {
-            // CHANGE THIS !!
-            props.setDesiredAge(props.val);
+        } if (props.id == 4) {
+            if (props.val == "true") {
+                props.setIsPersonalized(true);
+            } else {
+                props.setIsPersonalized(false);
+            }
         }
     }
 

@@ -17,6 +17,7 @@ interface questionProps {
   setDesiredAge: (age : number) => void;
   setDesiredLength: (length : number) => void;
   setDesiredBPM: (bpm : number) => void;
+  setIsPersonalized: (b : boolean) => void;
 }
 
 /**
@@ -61,6 +62,7 @@ export default function ModeQuestionComponent(props: questionProps) {
           setDesiredLength={props.setDesiredLength}
           setDesiredBPM={props.setDesiredBPM}
           setDesiredIntensity={props.setDesiredIntensity}
+          setIsPersonalized={props.setIsPersonalized}
         />
       ))
     ) : (
