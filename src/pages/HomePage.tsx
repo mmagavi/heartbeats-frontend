@@ -51,12 +51,12 @@ export default function HomePage(props: homePageProps) {
       props.setUserCode(String(params.get("code")));
       props.setLoggedIn(true);
 
-      console.log(String(params.get("code")));
-      console.log("line 33 app user code is:" + props.userCode);
+      // console.log(String(params.get("code")));
+      // console.log("line 33 app user code is:" + props.userCode);
     }
   }
   console.log("logged in status: " + props.loggedIn);
-  console.log("user ID is: " + props.userCode);
+  // console.log("user ID is: " + props.userCode);
 
   // reset results
   function reset() {
