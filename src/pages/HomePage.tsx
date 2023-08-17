@@ -165,6 +165,7 @@ export default function HomePage(props: homePageProps) {
             setDesiredAge={setDesiredAge}
             setDesiredLength={setDesiredLength}
             setDesiredBPM={setCurrentBPM}
+            setIsPersonalized={setIsPersonalized}
         />
       </div>
   );

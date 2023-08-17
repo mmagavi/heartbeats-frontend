@@ -19,6 +19,7 @@ interface QuestionsPageProps {
   setDesiredLength: (length : number) => void;
   setDesiredBPM: (bpm : number) => void;
   setDesiredIntensity: (warmup: string) => void;
+  setIsPersonalized: (b : boolean) => void;
 }
 
 /**
@@ -49,6 +50,9 @@ export default function QuestionsPage(props: QuestionsPageProps) {
   function setChoice(id: number, val: any) {
     console.log("set choice to " + val);
     setAns({ ...ans, [id]: val });
+    if (id == 4) {
+      props.setIsPersonalized(val);
+    }
   }
 
   function chooseThree(){

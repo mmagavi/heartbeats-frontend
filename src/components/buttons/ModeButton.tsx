@@ -51,13 +51,6 @@ export default function ModeButton(props: modeProps) {
             } else if (props.val == "high") {
                 props.setDesiredIntensity("advanced");
             }
-        } if (props.id == 4) {
-            if (props.val == true) {
-                console.log("setting isPersonalized to true...");
-                props.setIsPersonalized(true);
-            } else if (props.val == false) {
-                props.setIsPersonalized(false);
-            }
         }
     }
 
