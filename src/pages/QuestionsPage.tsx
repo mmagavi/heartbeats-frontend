@@ -48,6 +48,7 @@ export default function QuestionsPage(props: QuestionsPageProps) {
 
   const questionsRaw = props.questionsRaw;
   function setChoice(id: number, val: any) {
+    console.log("id is " + id);
     console.log("set choice to " + val);
     setAns({ ...ans, [id]: val });
     if (id == 4) {
