@@ -366,6 +366,7 @@ iframe {
   background-color: #ffffff;
   box-shadow: #bdbdbd 0 -0.5vh 0 inset;
   border-color: #bbbbbb;
+  color: #242424;
 }
 
 .commandsList {
