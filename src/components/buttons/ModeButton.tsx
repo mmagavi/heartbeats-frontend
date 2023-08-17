@@ -52,9 +52,9 @@ export default function ModeButton(props: modeProps) {
                 props.setDesiredIntensity("advanced");
             }
         } if (props.id == 4) {
-            if (props.val == "true") {
+            if (props.val == true) {
                 props.setIsPersonalized(true);
-            } else {
+            } else if (props.val == false) {
                 props.setIsPersonalized(false);
             }
         }
