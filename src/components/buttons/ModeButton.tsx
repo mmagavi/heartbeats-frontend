@@ -53,6 +53,7 @@ export default function ModeButton(props: modeProps) {
             }
         } if (props.id == 4) {
             if (props.val == true) {
+                console.log("setting isPersonalized to true...");
                 props.setIsPersonalized(true);
             } else if (props.val == false) {
                 props.setIsPersonalized(false);
