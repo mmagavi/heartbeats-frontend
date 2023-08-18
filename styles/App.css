@@ -290,7 +290,7 @@ iframe {
 
 .subtitle {
   font-size: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   width: fit-content;
