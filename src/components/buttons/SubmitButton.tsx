@@ -95,7 +95,7 @@ function SubmitButton(props: SubmitButtonProps) {
     async function handleSubmit() {
         await setIsLoading(true);
         console.log('beginning handleSubmit...' + isLoading);
-        logInfo();
+        await logInfo();
         await setIsLoading(false);
         console.log('ending handleSubmit...' + isLoading);
     }
