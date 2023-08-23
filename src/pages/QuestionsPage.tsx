@@ -32,11 +32,11 @@ export default function QuestionsPage(props: QuestionsPageProps) {
 
   let genre_list = {
     "afrobeat" : false, "alt-rock": false, "alternative" : false, "blues" : false, "brazil" : false,
-    "british"  : false, "chill" : false, "classical" : false, "club" : false, "country" : false, "dance" : false,
+    "british"  : false, "chill" : false, "classical" : false, "country" : false, "dance" : false,
     "disco" : false, "dubstep" : false, "edm" : false, "emo" : false, "folk" : false, "french" : false,
     "funk" : false, "garage" : false, "german" : false, "grunge" : false, "hardcore" : false, "hip-hop" : false,
     "indian" : false, "indie" : false, "indie-pop" : false, "industrial" : false, "j-pop" : false, "jazz" : false,
-    "k-pop" : false, "latino" : false, "malay" : false, "mandopop" : false, "metal" : false, "new-age" : false,
+    "k-pop" : false, "latino" : false, "malay" : false, "mandopop" : false, "metal" : false,
     "new-release" : false, "opera" : false, "party" : false, "philippines-opm" : false, "pop" : false,
     "punk" : false, "punk-rock" : false, "r-n-b" : false, "rainy-day" : false, "reggae" : false, "rock" : false,
     "sad" : false, "samba" : false, "sertanejo" : false, "sleep" : false, "soul" : false, "spanish" : false,

@@ -18,22 +18,6 @@ interface SliderProps {
 }
 
 /**
- * Value label component for the SliderUI component
- * Shows the current value of the slider
- * @param props - SliderValueLabelProps standard
- * @constructor
- */
-function ValueLabelComponent(props: SliderValueLabelProps) {
-    const {children, value} = props;
-
-    return (
-        <Tooltip enterTouchDelay={0} placement="top" title={value}>
-            {children}
-        </Tooltip>
-    );
-}
-
-/**
  * Slider component to select a heart rate in range
  * @param props - SliderProps: currentVal & setCurrentVal
  * @constructor
@@ -69,6 +53,7 @@ export default function SliderUI(props: SliderProps): ReactComponent {
       tabIndex={0}
     >
       <Slider
+          size="medium"
           sx={{
             '& .MuiSlider-thumb': {
                 color: 'rgb(255,65,65)',
@@ -83,10 +68,12 @@ export default function SliderUI(props: SliderProps): ReactComponent {
           color: "white",
               mark: {
                   color: "red"
-              }
-          }}
-          //valueLabelDisplay="on" ?
-        valueLabelDisplay="auto"
+              },
+              fontSize: 14,
+          }
+          }
+          valueLabelDisplay="on"
+        // valueLabelDisplay="auto"
         aria-label="custom thumb label"
         defaultValue={DEFAULT}
         role={ROLE}

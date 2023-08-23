@@ -12,6 +12,7 @@ a {
   color: black;
   wrap-option: nowrap;
 }
+
 a:hover {
   color: black;
 }
@@ -20,13 +21,16 @@ a:hover {
   font-size: 26px;
   width: fit-content;
 }
+
 .questionText {
   color:white;
   font-size: 20px;
 }
+
 .questionText:hover {
   color:white;
 }
+
 .genreQuestionText {
   color:white;
   font-size: 20px;
@@ -118,9 +122,11 @@ label {
 
   background-color: rgba(147, 147, 147, 0.2);
 }
+
 .choice:hover {
   background-color: rgba(147, 147, 147, 0.6);
 }
+
 .choice:after,
 .choice:before {
   backface-visibility: hidden;
@@ -139,6 +145,7 @@ label {
   transition: width 350ms ease-in-out;
   width: 70%;
 }
+
 .choice:hover:before {
   bottom: auto;
   top: 0;
@@ -174,9 +181,11 @@ label {
   border-radius: 1vw;
   background-color: rgba(147, 147, 147, 0.2);
 }
+
 .modeChoice:hover {
   background-color: rgba(98, 95, 95, 0.88);
 }
+
 .modeChoice:after,
 .modeChoice:before {
   backface-visibility: hidden;
@@ -195,6 +204,7 @@ label {
   transition: width 350ms ease-in-out;
   width: 70%;
 }
+
 .modeChoice:hover:before {
   bottom: auto;
   top: 0;
@@ -224,6 +234,7 @@ input {
   visibility: hidden;
   position: absolute;
 }
+
 .inputDiv {
   opacity:1;
   visibility: visible;
@@ -241,23 +252,28 @@ input {
   .modeChoice {
     border-radius: 15px;
   }
+
   .choice {
     border-radius: 15px;
   }
+
   .question {
     font-size: 25px;
     padding-right: 10vw;
     padding-left: 10vw;
   }
+
   .questionText {
     color:white;
     font-size: 18px;
   }
+
   img{
     max-width: 300px;
     max-height: 35vh;
     border-radius: 13px;
   }
+
   .questionItem {
     width: 98%;
     text-align: center;

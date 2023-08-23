@@ -44,11 +44,13 @@ td {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .navContainer {
   display: flex;
   flex-direction: row;
   justify-content: right;
 }
+
 .navLink {
   color: white;
   margin: 4vh 1vw;
@@ -56,6 +58,7 @@ td {
   border-bottom-style: solid;
   border-bottom-color: transparent;
 }
+
 .navLink:hover {
   color: white;
   border-bottom-width: thick;
@@ -84,6 +87,7 @@ td {
   background-color: transparent;
   padding: 1vh;
 }
+
 .backButton:hover {
   background-color: rgba(147, 147, 147, 0.2);
   padding:2vh;
@@ -102,6 +106,7 @@ td {
   background-color: transparent;
   padding: 2vh 4vw 2vh;
 }
+
 .formSubmitButton:hover {
   background-color: rgba(147, 147, 147, 0.2);
   transition: 1s;
@@ -116,6 +121,7 @@ td {
   justify-content: center;
   padding-top: 5vh;
 }
+
 .resultsMainBody {
   animation: fadeIn 2s;
   color: white;
@@ -125,6 +131,7 @@ td {
   justify-content: center;
   padding-top: 3vh;
 }
+
 .aboutBody {
   animation: fadeIn 2s;
   font-family: Avenir, serif;
@@ -136,6 +143,7 @@ td {
   padding: 5vh 12vw 18vh;
   mask-image: linear-gradient(to bottom, transparent 0%, black 48px, black calc(100% - 48px), transparent 100%);
 }
+
 .aboutDiv {
   display: flex;
   flex-direction: column;
@@ -155,15 +163,18 @@ td {
   text-decoration-line: none;
     width: fit-content;
 }
+
 .aboutEmail:link {
   white-space: nowrap;
   text-decoration-line: none;
   width: fit-content;
 }
+
 .aboutEmail:hover {
   color: darkred;
   transition: 1s;
 }
+
 .aboutHeader {
   font-family: "Iceberg", serif;
   animation: fadeIn 2s;
@@ -196,6 +207,7 @@ td {
   margin: 0 2% 0 2vw;
   height: 480px;
 }
+
 .iframeResTxt {
   width: 20%;
   height: 420px;
@@ -212,6 +224,7 @@ td {
 iframe {
   border-radius: 12px;
 }
+
 .buttonsBox {
   display: flex;
   flex-direction: column;
@@ -254,6 +267,7 @@ iframe {
   margin-right: 15vw;
   margin-left: 15vw;
 }
+
 .questionsPage {
   display: flex;
   flex-direction: column;
@@ -318,6 +332,7 @@ iframe {
   padding-bottom: 5vh;
   font-size: 20px;
 }
+
 .serverStatusDiv {
   color: white;
   width: auto;
@@ -335,6 +350,7 @@ iframe {
   border-radius: 10px;
   margin-bottom: 2vh;
 }
+
 .reviewSubmitButton {
   height: 100%;
   padding: 1vh;
@@ -475,9 +491,11 @@ input:focus-visible:hover,
   width: 50%;
   padding: 5px;
 }
+
 .popup-arrow {
   color: rgb(255, 255, 255);
 }
+
 [role="tooltip"].popup-content {
   width: 200px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
@@ -486,10 +504,10 @@ input:focus-visible:hover,
 .popup-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
+
 [data-popup="tooltip"].popup-overlay {
   background: transparent;
 }
-
 
 .rating{
   display : flex;
@@ -507,11 +525,13 @@ input:focus-visible:hover,
   padding    : 25px 0 0;
   overflow   : hidden;
 }
+
 .rating:not(:hover) input:indeterminate + label,
 .rating:not(:hover) input:checked ~ input + label,
 .rating input:hover ~ input + label{
   color: white;
 }
+
 .rating:not(:hover) input:focus-visible + label{
 }
 
@@ -534,12 +554,12 @@ input:focus-visible:hover,
 .resultPageButton:link {
   color: black;
 }
+
 .aboutBody:link {
   color: white;
 }
 
 @media only screen and (max-width: 600px) {
-
   .sliderUIDiv {
     display: flex;
     margin: 0vh 10vw;
@@ -552,6 +572,7 @@ input:focus-visible:hover,
     margin-top: 8vh;
     width: 60vw;
   }
+
   .resultsMainBody {
     animation: fadeIn 2s;
     color: white;
@@ -562,6 +583,7 @@ input:focus-visible:hover,
     align-items: center;
     padding-top: 0vh;
   }
+
   .iframeResult {
     margin: 0 2%;
     width: 80%;
@@ -570,6 +592,7 @@ input:focus-visible:hover,
     text-align: center;
     padding-top: 4vh;
   }
+
   .iframeResTxt {
     margin: 0 2%;
     width: 80%;
@@ -578,6 +601,7 @@ input:focus-visible:hover,
     text-align: center;
     padding-top: 4vh;
   }
+
   .aboutBody {
     animation: fadeIn 2s;
     font-family: Avenir, serif;
@@ -589,6 +613,7 @@ input:focus-visible:hover,
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .loginBody {
     animation: fadeIn 2s;
     color: white;
@@ -601,6 +626,7 @@ input:focus-visible:hover,
     padding-left: 0vh;
     padding-right: 0vh;
   }
+
   .subtext {
     font-family: Avenir;
     font-size: 15px;
@@ -608,11 +634,13 @@ input:focus-visible:hover,
     padding-right: 10vw;
     padding-left: 10vw;
   }
+
   .subtitle {
     font-size: 28px;
     margin-bottom: 30px;
     height: fit-content;
   }
+
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -626,11 +654,13 @@ input:focus-visible:hover,
     border-color: #323232;
     color: white;
   }
+
   .iframeTitle {
     font-size: 30px;
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
+
   .header {
     font-size: 18px;
     color: white;
@@ -669,6 +699,7 @@ input:focus-visible:hover,
     background-color: transparent;
     padding: 1vh;
   }
+
   .mainBody {
     animation: fadeIn 2s;
     color: white;
@@ -677,6 +708,7 @@ input:focus-visible:hover,
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .footer {
     margin-bottom: 10vh;
     font-size: 16px;
@@ -685,6 +717,7 @@ input:focus-visible:hover,
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .logoutBody {
     animation: fadeIn 2s;
     color: white;
@@ -695,12 +728,14 @@ input:focus-visible:hover,
     padding-top: 12vh;
     font-size: 18px;
   }
+
   .aboutHeader {
     font-family: "Iceberg", serif;
     animation: fadeIn 2s;
     font-size: 22px;
     padding-top: 0;
   }
+
   .aboutDiv {
     padding-right: 30px;
     padding-left: 30px;
