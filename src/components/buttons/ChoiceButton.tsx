@@ -63,7 +63,8 @@ export default function ChoiceButton(props: choiceProps) {
               onChange={onChangeHelper}
               name={"" + props.id}
           />
-          &#x2665;
+          {/*&#x2665;*/}
+          &#9829;
           <div className="questionText"><p>{props.text}</p></div>
         </label>
   );
