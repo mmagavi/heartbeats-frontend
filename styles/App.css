@@ -666,14 +666,14 @@ input:focus-visible:hover,
     color: white;
     height: fit-content;
     padding: 0.7vw 4vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: flex-start;
+    justify-content: right;
+    align-items: flex-end;
   }
 
   .reviewBody {
@@ -737,5 +737,13 @@ input:focus-visible:hover,
   .aboutDiv {
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .navLink {
+    color: white;
+    margin: 4vh 1.5vw;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
   }
 }
