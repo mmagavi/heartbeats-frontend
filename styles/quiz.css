@@ -83,7 +83,7 @@ img{
 }
 
 .SliderContainer {
-  margin-bottom: 15vh;
+  /*margin-bottom: 15vh;*/
   color: white;
 }
 
@@ -255,6 +255,31 @@ input {
 
   .choice {
     border-radius: 15px;
+    padding: 5vh 6vw 0;
+    width: 70vw;
+    margin: 1vh;
+
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 25px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: rgba(0, 0, 0, 0);
+
+    background-color: rgba(147, 147, 147, 0.2);
   }
 
   .question {
@@ -265,7 +290,7 @@ input {
 
   .questionText {
     color:white;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   img{
@@ -293,6 +318,17 @@ input {
     font-size: 15px;
   }
 
+  .choicesList {
+    display: flex;
+    flex-flow: column;
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+
   .modeChoicesList {
     display: flex;
     flex-flow: wrap row;
@@ -300,5 +336,16 @@ input {
     flex-direction: row;
     justify-content: center;
     padding: 5vh 2vw 10vh;
+  }
+
+  .genreQuestionText {
+    color:white;
+    font-size: 20px;
+    background-color: #625f5f;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    vertical-align: middle;
   }
 }

@@ -34,7 +34,7 @@ export default function GenreButton(props: genreProps) {
         padding: checked ? "0.7vw" : undefined,
         paddingLeft: checked ? "1.2vw" : undefined,
         paddingRight: checked ? "1.2vw" : undefined,
-        borderRadius: checked ? "5vw" : "3vw",
+        // borderRadius: checked ? "5vw" : "3vw",
         transition: "all 0.3s ease-in-out",
     };
 
