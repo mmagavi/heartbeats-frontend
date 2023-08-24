@@ -1,5 +1,5 @@
 # heartbeats-frontend
-Front end for the heartbeats project
+Frontend for the heartbeats project. Deployed using netlify.
 
 # Contributors:
 Maya Magavi
