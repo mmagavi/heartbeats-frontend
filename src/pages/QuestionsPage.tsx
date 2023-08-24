@@ -115,6 +115,11 @@ export default function QuestionsPage(props: QuestionsPageProps) {
   function submit() {
     console.log(ans);
     setAns({});
+
+    let raw_args = window.location.search
+    let params = new URLSearchParams(raw_args)
+
+    // fetch("http://localhost:3232/register-user-code?code=" + params.get("code"))
   }
 
   // checks if answers are all answered. If so, gets code.

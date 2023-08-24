@@ -57,7 +57,7 @@ export default function ChoiceButton(props: choiceProps) {
               type="radio"
               value={props.val}
               checked={checked}
-              onChange={onChangeHelper}
+              // onChange={onChangeHelper}
               name={"" + props.id}
           />
           {/*&#x2665;*/}
