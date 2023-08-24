@@ -22,7 +22,7 @@ interface modeProps {
     setDesiredLength: (length : number) => void;
     setDesiredBPM: (bpm : number) => void;
     setDesiredIntensity: (warmup: string) => void;
-    setIsPersonalized: (b : boolean) => void;
+    setIsPersonalized: (b : string) => void;
 }
 
 /**
