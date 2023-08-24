@@ -17,7 +17,7 @@ interface questionProps {
   setDesiredAge: (age : number) => void;
   setDesiredLength: (length : number) => void;
   setDesiredBPM: (bpm : number) => void;
-  setIsPersonalized: (b : string) => void;
+  setIsPersonalized: (b : boolean) => void;
 }
 
 /**
@@ -70,6 +70,7 @@ export default function ModeQuestionComponent(props: questionProps) {
       <div className="slider">
         <SliderUI
           currentVal={90}
+          // setCurrentVal={(n) => props.setChoice(props.id, n)}
             setCurrentVal={n => setNumHelper(n)}
           id={props.id}
         />

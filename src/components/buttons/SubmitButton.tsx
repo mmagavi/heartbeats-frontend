@@ -13,7 +13,7 @@ interface SubmitButtonProps {
     desired_intensity : String;
     age : number;
     workout_length: number;
-    isPersonalized: string;
+    isPersonalized: boolean;
     current_bpm: number;
     setResultsPage: (b : boolean) => void;
     setPlaylistID: (id : string | undefined) => void;

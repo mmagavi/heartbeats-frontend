@@ -14,15 +14,12 @@ interface QuestionsPageProps {
   setPlaylist: (playlistID: string) => void;
   submitButton: (submit: () => void) => null | JSX.Element;
   questionsRaw: questionsType[];
-  desired_intensity : String;
-  isPersonalized: String;
-  genres : String;
   setGenres: (genres: (e: any) => any) => void;
   setDesiredAge: (age : number) => void;
   setDesiredLength: (length : number) => void;
   setDesiredBPM: (bpm : number) => void;
   setDesiredIntensity: (warmup: string) => void;
-  setIsPersonalized: (s : string) => void;
+  setIsPersonalized: (b : boolean) => void;
 }
 
 /**
@@ -124,15 +121,10 @@ export default function QuestionsPage(props: QuestionsPageProps) {
 
   // checks if answers are all answered. If so, gets code.
   let submitButton = null;
-  if (props.desired_intensity != "" && props.isPersonalized != "") {
+  if (Object.keys(ans).length == questionsRaw.length) {
     // submit button
-    if (props.isPersonalized == "true") {
-      props.setPlaylist(getCode());
-      submitButton = props.submitButton(submit);
-    } else if (!(props.genres=="")) {
-      props.setPlaylist(getCode());
-      submitButton = props.submitButton(submit);
-    }
+    props.setPlaylist(getCode());
+    submitButton = props.submitButton(submit);
   }
   // render questions, genre question, and submit button
   return (

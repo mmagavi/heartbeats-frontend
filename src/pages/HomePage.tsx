@@ -37,7 +37,7 @@ export default function HomePage(props: homePageProps) {
   const [genres, setGenres] = useState<string>("");
   const [desiredAge, setDesiredAge] = useState<number>(-1);
   const [desiredIntensity, setDesiredIntensity] = useState<string>("");
-  const [isPersonalized, setIsPersonalized] = useState<string>("");
+  const [isPersonalized, setIsPersonalized] = useState(false);
   const [desiredLength, setDesiredLength] = useState<number>(30);
   const [currentBPM, setCurrentBPM] = useState<number>(70);
   const [playlist_id, setPlaylistID] = useState<string | undefined>("")
@@ -51,9 +51,12 @@ export default function HomePage(props: homePageProps) {
       props.setUserCode(String(params.get("code")));
       props.setLoggedIn(true);
 
+      // console.log(String(params.get("code")));
+      // console.log("line 33 app user code is:" + props.userCode);
     }
   }
   console.log("logged in status: " + props.loggedIn);
+  // console.log("user ID is: " + props.userCode);
 
   // reset results
   function reset() {
@@ -163,9 +166,6 @@ export default function HomePage(props: homePageProps) {
             setDesiredLength={setDesiredLength}
             setDesiredBPM={setCurrentBPM}
             setIsPersonalized={setIsPersonalized}
-            desired_intensity={desiredIntensity}
-            isPersonalized={isPersonalized}
-            genres={genres}
         />
       </div>
   );
