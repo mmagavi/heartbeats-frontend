@@ -26,7 +26,7 @@ export const ExerciseQuestions = [
   },
   {
     // a slider question should look like this
-    question: "Select your current heart rate (or estimate an average resting heart rate at around 70)",
+    question: "Select your current heart rate (or estimate an average resting heart rate of 70)",
     id: 2,
     key: 103,
   },
