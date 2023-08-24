@@ -47,9 +47,6 @@ export default function ChoiceButton(props: choiceProps) {
       } else if (props.val == "high") {
         props.setDesiredIntensity("high");
       }
-    } if (props.id == 3) {
-      // CHANGE THIS !!
-      props.setDesiredAge(props.val);
     }
   }
 

@@ -4,8 +4,6 @@ import {
   Slider_Role,
   Slider_AriaLabel,
 } from "../accessibility/Aria";
-import { SliderValueLabelProps } from "@mui/material/Slider";
-import Tooltip from "@mui/material/Tooltip";
 import { Mark } from "@mui/base";
 
 /**
@@ -30,9 +28,9 @@ export default function SliderUI(props: SliderProps): ReactComponent {
     let MARKS: boolean | Mark[] | undefined = [];
 
   if (props.id == 2) {
-    MIN = 13;
+    MIN = 55;
     MAX = 100;
-    DEFAULT = 35;
+    DEFAULT = 70;
     ROLE = "Slider1";
   } if (props.id == 3) {
     MIN = 20;

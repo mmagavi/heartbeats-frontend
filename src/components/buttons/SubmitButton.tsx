@@ -70,7 +70,7 @@ function SubmitButton(props: SubmitButtonProps) {
         + "&playlist_type=" + props.playlist_type
         + "&intensity=" + props.desired_intensity
         + "&genres=" + props.genres
-        + "&age=" + props.age
+        + "&age=" + props.current_bpm
         + "&workout_length=" + props.workout_length
         + "&is_personalized=" + props.isPersonalized
 

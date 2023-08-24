@@ -44,10 +44,8 @@ export default function QuestionComponent(props: questionProps) {
     props.setChoice(props.id, n);
     if (props.id == 3) {
       props.setDesiredLength(n);
-      //console.log("set desired length to " + n);
     } else if (props.id == 2) {
-      props.setDesiredAge(n);
-      //console.log("set desired age to " + n);
+      props.setDesiredBPM(n);
     }
   }
 
