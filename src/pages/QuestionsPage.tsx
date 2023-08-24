@@ -14,12 +14,15 @@ interface QuestionsPageProps {
   setPlaylist: (playlistID: string) => void;
   submitButton: (submit: () => void) => null | JSX.Element;
   questionsRaw: questionsType[];
+  desired_intensity : String;
+  isPersonalized: String;
+  genres : String;
   setGenres: (genres: (e: any) => any) => void;
   setDesiredAge: (age : number) => void;
   setDesiredLength: (length : number) => void;
   setDesiredBPM: (bpm : number) => void;
   setDesiredIntensity: (warmup: string) => void;
-  setIsPersonalized: (b : boolean) => void;
+  setIsPersonalized: (s : string) => void;
 }
 
 /**
@@ -112,19 +115,19 @@ export default function QuestionsPage(props: QuestionsPageProps) {
   function submit() {
     console.log(ans);
     setAns({});
-
-    let raw_args = window.location.search
-    let params = new URLSearchParams(raw_args)
-
-    // fetch("http://localhost:3232/register-user-code?code=" + params.get("code"))
   }
 
   // checks if answers are all answered. If so, gets code.
   let submitButton = null;
-  if (Object.keys(ans).length == questionsRaw.length) {
+  if (props.desired_intensity != "" && props.isPersonalized != "") {
     // submit button
-    props.setPlaylist(getCode());
-    submitButton = props.submitButton(submit);
+    if (props.isPersonalized == "true") {
+      props.setPlaylist(getCode());
+      submitButton = props.submitButton(submit);
+    } else if (!(props.genres=="")) {
+      props.setPlaylist(getCode());
+      submitButton = props.submitButton(submit);
+    }
   }
   // render questions, genre question, and submit button
   return (

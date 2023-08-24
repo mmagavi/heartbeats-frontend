@@ -17,7 +17,7 @@ interface questionProps {
   setDesiredAge: (age : number) => void;
   setDesiredLength: (length : number) => void;
   setDesiredBPM: (bpm : number) => void;
-  setIsPersonalized: (b : boolean) => void;
+  setIsPersonalized: (s : string) => void;
 }
 
 /**
