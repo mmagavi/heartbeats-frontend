@@ -1,7 +1,7 @@
 # heartbeats-frontend
 Frontend for the heartbeats project.
 
-Deployed using netlify at: https://heartbeatsapp.netlify.app/
+Deployed at: https://heartbeatsapp.netlify.app/
 
 !! Currently in development mode, must have your email registered to try it out !!
 
