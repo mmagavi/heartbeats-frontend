@@ -1,16 +1,12 @@
 # heartbeats-frontend
 Frontend for the heartbeats project, deployed at: https://heartbeatsapp.netlify.app/
 
-Currently in development mode, must have your email registered to try it out, feel free to send us an email at heartbeats.feedback@gmail.com and we will add you
-
-Extended quota mode request pending.
-
 # Contributors
 Maya Magavi
 
 Dalton Simonson
 
-#### Original Project:
+#### Original Project also created by:
 Yanchi Wang
 
 Quinn Coleman
